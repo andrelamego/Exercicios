@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Exercicios ex = new Exercicios();
         
+		int[] vet = new int[1000];
+		int[] vet2 = new int[10000];
+		int[] vet3 = new int[100000];
 
         int selecao = 0;
 		
@@ -18,7 +21,9 @@ public class Main {
 			
 			switch (selecao) {
 				case 1:
-					ex.PreencheVetor();
+					ex.PreencheVetor(vet);
+					ex.PreencheVetor(vet2);
+					ex.PreencheVetor(vet3);
 					break;
 				case 2:
 					ex.SeparaFrase();
@@ -27,7 +32,7 @@ public class Main {
 					ex.Exercicio3();
 					break;
 				case 9:
-					System.out.println("Finalizado");
+					//System.out.println("Finalizado");
 					break;
 			}
 		}

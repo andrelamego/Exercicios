@@ -7,9 +7,7 @@ public class Exercicios {
 		super();
 	}
 	 
-	public void PreencheVetor(){
-		int[] vet = new int[1000000];
-		 
+	public void PreencheVetor(int[] vet){		 
 		double tempoInicial = System.nanoTime();
 		 
 		for(int i : vet) {
@@ -32,7 +30,7 @@ public class Exercicios {
 		for (String x : vetFrase) {
 			System.out.println(x);
 		}
-		System.out.println("\nQntd. Palavras: " + vetFrase.length);
+		System.out.println("\nQntd. Palavras: " + vetFrase.length + "\n--------------------------");
 	}
 	
 	public void Exercicio3() {
@@ -61,6 +59,12 @@ public class Exercicios {
 	}
 
 	private void verifVet(int[] vet){
+		for (int i : vet) {
+			System.out.print(i + "  ");
+		}
+		System.out.println("\n");
+
+
 		for (int i : vet) {
 			if(i % 2 == 1){
 				System.out.println(i+" <--- Impar");
